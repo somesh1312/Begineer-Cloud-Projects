@@ -25,6 +25,25 @@ This repository provides a step-by-step guide to hosting a static website on **A
 1. Use the **Policy Generator** to create a bucket policy allowing public read access.
 2. Apply the policy to your bucket.
 
+### Step 4: Verify Internet Access
+
+Once you’ve configured your bucket, it’s time to verify that your website and assets are accessible.
+
+#### **Test the Website URL**
+- Go to the **Properties** tab of your website bucket and locate the **Website Endpoint URL**.
+- Copy and paste the URL into your browser to check if your website is loading correctly.
+
+
+#### **5. Troubleshooting**
+- **403 Forbidden Error**: Verify the bucket policy includes public read access.
+- **404 Not Found Error**: Ensure that file names and paths match exactly (case-sensitive).
+
+---
+
+## Final Notes
+
+🎉 **Congratulations!** You’ve successfully hosted your static website on AWS S3.
+
 Example Bucket Policy:
 ```json
 {
@@ -47,6 +66,8 @@ Example Bucket Policy:
         }
     ]
 }
+```json
+
 ### Step 4: Verify Internet Access
 
 Once you’ve configured your bucket, it’s time to verify that your website and assets are accessible.
