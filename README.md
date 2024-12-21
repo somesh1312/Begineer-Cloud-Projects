@@ -29,14 +29,52 @@ Example Bucket Policy:
 ```json
 {
     "Version": "2012-10-17",
+    "Id": "Policy1734744283356",
     "Statement": [
         {
-            "Sid": "PublicReadGetObject",
+            "Sid": "Stmt1734744196822",
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::your-bucket-name/*"
+            "Resource": "arn:aws:s3:::static-website-p1/*"
+        },
+        {
+            "Sid": "Stmt1734744282081",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::static-website-p1/assets/img/*"
         }
     ]
 }
-# Begineer-Cloud-Projects
+### Step 4: Verify Internet Access
+
+Once you’ve configured your bucket, it’s time to verify that your website and assets are accessible.
+
+#### **Test the Website URL**
+- Go to the **Properties** tab of your website bucket and locate the **Website Endpoint URL**.
+- Copy and paste the URL into your browser to check if your website is loading correctly.
+
+
+#### **5. Troubleshooting**
+- **403 Forbidden Error**: Verify the bucket policy includes public read access.
+- **404 Not Found Error**: Ensure that file names and paths match exactly (case-sensitive).
+
+---
+
+## Final Notes
+
+🎉 **Congratulations!** You’ve successfully hosted your static website on AWS S3.
+
+Stay tuned for more tech tutorials and guides to help you build and deploy exciting projects.
+
+💡 **Stay Connected**:
+- Subscribe to my portfolio for the latest updates.
+- Follow me on:
+  - [X (formerly Twitter)](https://twitter.com/)
+  - [Instagram](https://instagram.com/)
+  - [LinkedIn](https://linkedin.com/)
+  - [YouTube](https://youtube.com/)
+
+Thank you for reading, and happy coding! 🚀
+
