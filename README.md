@@ -42,7 +42,7 @@ Once you’ve configured your bucket, it’s time to verify that your website an
 
 ## Final Notes
 
-🎉 **Congratulations!** You’ve successfully hosted your static website on AWS S3.
+🎉 **Congratulations!** You’ve successfully hosted your static website on AWS S3. Feel free to look at my blogpost on this project (https://medium.com/@somesh1st/hosting-a-website-on-amazon-s3-546332c96e7c)
 
 Example Bucket Policy:
 ```json
